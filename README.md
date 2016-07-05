@@ -291,7 +291,7 @@ sudo apt-get install nodejs
 sudo apt-get install npm
 ```
 
-- Arduino IDE, version 1.6.8. (Earlier versions will not work with the Azure IoT library)
+- [Arduino IDE](https://www.arduino.cc/en/Main/Software), version 1.6.8. (Earlier versions will not work with the Azure IoT library)
 - Sensor interface library from Adafruit. [https://github.com/adafruit/Adafruit_BME280_Library/archive/master.zip](https://github.com/adafruit/Adafruit_BME280_Library/archive/master.zip)
 
 ### 2.2.2 Required Hardware
