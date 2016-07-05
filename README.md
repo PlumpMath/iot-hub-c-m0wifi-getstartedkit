@@ -272,7 +272,8 @@ The end result will be a functional command center where you can view the histor
 
 ### 2.2.1 Required Software
 
-- [Git](https://git-scm.com/downloads) - For cloning the required repositories.Clone this project repository locally by issuing the following command in your desired directory:
+- [Git](https://git-scm.com/downloads) - For cloning the required repositories, download if needed using the link.
+  Clone this project repository locally by issuing the following command in your desired directory:
 
 ```
 git clone https://github.com/Azure-Samples/iot-hub-c-m0wifi-getstartedkit.git
