@@ -341,10 +341,9 @@ sudo apt-get install npm
 - [ ] Create an IoT Hub using Microsoft Azure
 - [ ] Copy the IoT Hub connection string
 - [ ] Use the IoT Hub [Device Explorer](https://github.com/Azure/azure-iot-sdks/releases) to add a device and get the connection string
-- After creating your device, make note of your connection string to enter into the code you’ll run on your device later
 
 ***
-**Note:** Make sure to copy down the names and connection strings mentioned into a text document for reference later.
+**Note:** After creating your device, make note of your connection string to enter into the code you’ll run on your device later
 ***
 
 
@@ -375,8 +374,16 @@ Now we will create a service to store our data in the cloud.
 - Log on to the [Microsoft Azure Portal](https://portal.azure.com/)
 - In the menu, click **New** and select **Data + Storage** then **Storage Account**
 - Choose **Classic** for the deployment model and click on **Create**
-- Enter the name of your choice (We chose `featherstorage`) for the account name, `Standard-RAGRS` for the type, choose your subscription, select the resource group you created earlier, then click on **Create**
+- Enter the name of your choice (We chose `featherstorage`) for the account name, `Standard` for the type, choose your subscription, select the resource group you created earlier, then click on **Create**
 - Once the account is created, find it in the **resources blade** or click on the **pinned tile**, go to **Settings**, **Keys**, and write down the _primary connection string_.
+- Now we need to add a table to the storage account
+	* Windows: download a GUI tool called - [Azure Storage Explorer](https://azurestorageexplorer.codeplex.com/)
+	* Linux: ...
+- Open Storage Explorer and click 'Add Account' and enter 'Storage Account Name' and 'Storage Account Key' for the azure storage account just created
+![Connect to an Azure Storage Account](img/azurestorageexplorersetup.PNG)
+- Test the access to the account using the 'Test Access' button and if it validates then click 'Save'
+- Once the storage account is displayed, choose 'Tables' and then click 'New' button to add a table. Name the table 'TemperatureRecords'
+![Create a Table named TemperatureRecords](img/addatable.PNG)
 
 ## 2.7 Create a Stream Analytics job to Save IoT Data in Table Storage and Raise Alerts
 Stream Analytics is an Azure IoT service that streams and analyzes data in the cloud. We'll use it to process data coming from your device.
