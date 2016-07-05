@@ -272,8 +272,24 @@ The end result will be a functional command center where you can view the histor
 
 ### 2.2.1 Required Software
 
-- [Git](https://git-scm.com/downloads) - For cloning the required repositories
-- Node.js - For the Node application, we will go over this later.
+- [Git](https://git-scm.com/downloads) - For cloning the required repositories.Clone this project repository locally by issuing the following command in your desired directory:
+
+```
+git clone https://github.com/Azure-Samples/iot-hub-c-m0wifi-getstartedkit.git
+```
+ 
+- Node.js - We will be creating a Node application to configure an IoT dashboard
+		If you do not have it already, install Node.js and NPM.
+			- Windows and Mac installers can be found here: https://nodejs.org/en/download/
+			> Ensure that you select the options to install NPM and add to your PATH.
+   - Linux users can use the commands:
+
+```
+sudo apt-get update
+sudo apt-get install nodejs
+sudo apt-get install npm
+```
+
 - Arduino IDE, version 1.6.8. (Earlier versions will not work with the Azure IoT library)
 - Sensor interface library from Adafruit. [https://github.com/adafruit/Adafruit_BME280_Library/archive/master.zip](https://github.com/adafruit/Adafruit_BME280_Library/archive/master.zip)
 
@@ -433,23 +449,6 @@ WHERE MTemperature>25
 ***
 
 ## 2.8 Node Application Setup
-
- - If you do not have it already, install Node.js and NPM.
-   - Windows and Mac installers can be found here: https://nodejs.org/en/download/
-     - Ensure that you select the options to install NPM and add to your PATH.
-   - Linux users can use the commands:
-
-```
-sudo apt-get update
-sudo apt-get install nodejs
-sudo apt-get install npm
-```
-
-- Additionally, make sure you have cloned the project repository locally by issuing the following command in your desired directory:
-
-```
-git clone https://github.com/Azure-Samples/iot-hub-c-m0wifi-getstartedkit.git
-```
 
 - Open the `command_center_node` folder in your command prompt (`cd <path to locally cloned repro>/command_center_node`) and install the required modules by running the following:
 
