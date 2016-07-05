@@ -280,10 +280,10 @@ git clone https://github.com/Azure-Samples/iot-hub-c-m0wifi-getstartedkit.git
 ```
  
 - Node.js - We will be creating a Node application to configure an IoT dashboard
-		If you do not have it already, install Node.js and NPM.
-			- Windows and Mac installers can be found here: https://nodejs.org/en/download/
-			> Ensure that you select the options to install NPM and add to your PATH.
-   - Linux users can use the commands:
+	* If you do not have it already, install Node.js and NPM.
+		* Windows and Mac installers can be found here: https://nodejs.org/en/download/
+		* Ensure that you select the options to install NPM and add to your PATH.
+		* Linux users can use the commands:
 
 ```
 sudo apt-get update
