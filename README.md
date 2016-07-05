@@ -305,7 +305,7 @@ sudo apt-get install npm
 - All connections are on the board, not on the device
 
 ***
-**Note:** Column on the left corresponds to the sensor and on the right to the board. On the image, the board is place between 10 and 30 and sensor between 1 and 9. With this layout, you are able to connect wires next to the corresponding pins on the breadboard. Additionally, when counting the - and +  pins, start from the right and count in, as these do not align with the numbers indicated on the board.
+**Note:** Column on the left corresponds to the sensor and on the right to the board. On the image, the board is place between 10 and 30 (PIN 14C to PIN 25C) and sensor between 1 and 9 (PIN 1B to PIN7B). With this layout, you are able to connect wires next to the corresponding pins on the breadboard. Additionally, when counting the - and +  pins, start from the right and count in, as these do not align with the numbers indicated on the board.
 ***
 
 | Start                   | End                    | Cable Color   |
@@ -338,6 +338,9 @@ sudo apt-get install npm
 ### 2.4 Create a New Microsoft Azure IoT Hub and Add Device
 
 - To create your Microsoft Azure IoT Hub and add a device, follow the instructions outlined in the [Setup IoT Hub Microsoft Azure Iot SDK page](https://github.com/Azure/azure-iot-sdks/blob/master/doc/setup_iothub.md).
+- [ ] Create an IoT Hub using Microsoft Azure
+- [ ] Copy the IoT Hub connection string
+- [ ] Use the IoT Hub [Device Explorer](https://github.com/Azure/azure-iot-sdks/releases) to add a device and get the connection string
 - After creating your device, make note of your connection string to enter into the code you’ll run on your device later
 
 ***
