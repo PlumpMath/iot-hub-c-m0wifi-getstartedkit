@@ -383,6 +383,7 @@ Now we will create a service to store our data in the cloud.
 ![Connect to an Azure Storage Account](img/azurestorageexplorersetup.PNG)
 - Test the access to the account using the 'Test Access' button and if it validates then click 'Save'
 - Once the storage account is displayed, choose 'Tables' and then click 'New' button to add a table. Name the table 'TemperatureRecords'
+
 ![Create a Table named TemperatureRecords](img/addatable.PNG)
 
 ## 2.7 Create a Stream Analytics job to Save IoT Data in Table Storage and Raise Alerts
@@ -505,17 +506,17 @@ bower install
 ```
 {
     "port": "3000",
-    "eventHubName": "event-hub-name",
-    "ehConnString": "Endpoint=sb://name.servicebus.windows.net/;SharedAccessKeyName=readwrite;SharedAccessKey=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=",
-    "deviceId": "iot-hub-device-name",
-    "iotHubConnString": "HostName=iot-hub-name.azure-devices.net;SharedAccessKeyName=service;SharedAccessKey=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa=",
-    "storageAcountName": "aaaaaaaaaaa",
-    "storageAccountKey": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa==",
+    "eventHubName": "[eventhub name]",
+    "ehConnString": "Endpoint=sb://[namespace].servicebus.windows.net/;SharedAccessKeyName=[policy name];SharedAccessKey=[key]",
+    "deviceConnString": "HostName=[iot hub name].azure-devices.net;DeviceId=[device name];SharedAccessKey=[key]",
+    "iotHubConnString": "HostName=[iot hub name].azure-devices.net;SharedAccessKeyName=[service];SharedAccessKey=[key]",
+    "storageAcountName": "[storage account name]",
+    "storageAccountKey": "[storage account key]",
     "storageTable": "TemperatureRecords"
-}
+} 
 ```
 
-- Now it is time to run it! Enter the following command:
+- Now it is time to run it! Back in your command prompt window. Enter the following command:
 
 ```
 node server.js
@@ -529,6 +530,8 @@ client connected
 ```
 
 - Visit the url in your browser and you will see the Node app running!
+
+![Running Node Application](img/nodeapplication.PNG)
 
 To deploy this project to the cloud using Azure, you can reference [Creating a Node.js web app in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-develop-deploy-mac/).
 
@@ -546,10 +549,10 @@ You will need to install the Feather M0 WiFi board extension for the Arduino IDE
 
 For this project, we'll also need the the following libraries:
 
- - Adafruit WINC1500 (download it from [here](https://learn.adafruit.com/adafruit-feather-m0-wifi-atwinc1500/using-with-arduino-ide))
- - Adafruit BME280
- - Adafruit Sensor Master
- - RTCZero
+ - Adafruit WINC1500 (download it from [here](https://github.com/adafruit/Adafruit_WINC1500))
+ - Adafruit BME280 (download it from [here](https://github.com/adafruit/Adafruit_BME280_Library))
+ - Adafruit Sensor Master (download it [here](https://github.com/adafruit/Adafruit_Sensor))
+ - RTCZero (download it [here](https://github.com/arduino-libraries/RTCZero))
 
  To install them, click on the `Sketch -> Include Library -> Manage Libraries`. Search for each library using the box in the upper-right to filter your search, click on the found library, and click the "Install" button.
 
@@ -565,7 +568,7 @@ For this project, we'll also need the the following libraries:
 ## 2.11 Modify the Command Center sample
 
 - Unzip the example code, and double-click the file `command_center.ino` to open the project in the Arduino IDE.
-- You will be prompted to creat a folder. Do this, and move the other files in the folder into the newly created child folder
+- You will be prompted to create a folder. Do this, and move the other files in the folder into the newly created child folder
 - Look for the following lines of code:
 
 ```
