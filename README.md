@@ -555,6 +555,7 @@ For this project, we'll also need the the following libraries:
  - RTCZero (download it [here](https://github.com/arduino-libraries/RTCZero))
 
  To install them, click on the `Sketch -> Include Library -> Manage Libraries`. Search for each library using the box in the upper-right to filter your search, click on the found library, and click the "Install" button.
+ Or if you have downloaded them from the links above go to 'Sketch -> Include Library -> Add .ZIP Library'
 
  We will also need the latest Azure IoT Library.
 
