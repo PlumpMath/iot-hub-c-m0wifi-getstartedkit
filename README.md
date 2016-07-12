@@ -533,7 +533,7 @@ client connected
 
 ![Running Node Application](img/nodeapplication.PNG)
 
-To deploy this project to the cloud using Azure, you can reference [Creating a Node.js web app in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-develop-deploy-mac/).
+To deploy this project to the cloud using Azure, you can reference [Creating a Node.js web app in Azure App Service](https://azure.microsoft.com/en-us/documentation/articles/web-sites-nodejs-develop-deploy-mac/). This is not mandatory in the lab - the local version will work fine.
 
 Next, we will update your device so that it can interact with all the things you just created.
 
