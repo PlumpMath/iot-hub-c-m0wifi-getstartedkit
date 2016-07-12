@@ -276,7 +276,7 @@ The end result will be a functional command center where you can view the histor
   Clone this project repository locally by issuing the following command in your desired directory:
 
 ```
-git clone https://github.com/Azure-Samples/iot-hub-c-m0wifi-getstartedkit.git
+git clone https://github.com/amykatenicho/iot-hub-c-m0wifi-getstartedkit/tree/testing#using-microsoft-azure-iot-services-to-identify-temperature-anomalies
 ```
  
 - Node.js - We will be creating a Node application to configure an IoT dashboard
